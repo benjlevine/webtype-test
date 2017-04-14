@@ -1,0 +1,69 @@
+// Typography
+$whitney: 'Whitney A', 'Whitney B', $font-stack-helvetica;
+$whitney-smallcap: 'Whitney SC A', 'Whitney SC B', $font-stack-helvetica;
+$plantin: 'Plantin W01', $font-stack-georgia;
+$heading-font-family: $whitney;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.25;
+$heading-line-height: 1;
+$article-line-height: 1.5;
+
+// Other Sizes
+$base-border-radius: 0;
+$base-spacing: 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$clr-bg: rgb(247, 245, 240);
+
+$clr-black: rgb(30, 30, 30);
+$clr-white: rgb(255, 255, 255);
+$clr-gr90: rgb(90, 90, 90);
+$clr-gr120: rgb(120, 120, 120);
+$clr-gr150: rgb(150, 150, 150);
+$clr-gr180: rgb(180, 180, 180);
+$clr-gr225: rgb(225, 225, 225);
+
+$clr-mag2: rgb(184, 4, 169);
+$clr-mag1: rgb(151, 4, 194);
+$clr-prpl: rgb(86, 0, 171);
+$clr-bl1: rgb(48, 4, 194);
+$clr-bl2: rgb(4, 11, 184);
+
+// Font Colors
+$base-font-color: $clr-black;
+$action-color: $clr-mag2;
+
+// Gradients
+$gradient-reg: linear-gradient(to right, $clr-prpl, $clr-bl2);
+$gradient-strong: linear-gradient(to right, $clr-mag1, $clr-bl2);
+$gradient-mirror: linear-gradient(to right, $clr-bl2, $clr-mag1, $clr-bl2);
+$gradient-fade: linear-gradient(to bottom, transparent, $clr-prpl);
+
+// Shadows
+$base-shadow: .5em .5em .5em rgba(0, 0, 0, .2);
+$base-shadow-hover: .125em .125em .25em rgba(86, 0, 171, .2);
+
+// Border
+$base-border-color: $clr-mag2;
+$base-border: 1px solid $base-border-color;
+$underline-white: 4px solid $clr-white;
+$block-underline-off: .3em solid transparent;
+
+// Background Colors
+$base-background-color: $clr-bg;
+$secondary-background-color: $clr-white;
+
+// Forms
+$form-box-shadow: .25rem .25rem .25rem rgba(0, 0, 0, .2) inset;
+$form-box-shadow-focus: $form-box-shadow;
+
+// Animations
+$base-duration: 200ms;
+$base-timing: ease;
+$base-transition: all $base-timing $base-duration;
