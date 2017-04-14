@@ -9,22 +9,26 @@ body {
   background-color: $base-background-color;
 }
 
-%small-caps {
-  font-family: $meta-serif;
-  font-weight: 700;
-  letter-spacing: .1em;
-  text-transform: lowercase;
+%oldstyle {
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: 'liga', 'clig', 'kern', 'onum';
+  -webkit-font-feature-settings: 'liga', 'clig', 'kern', 'onum';
+  font-feature-settings: 'liga', 'clig', 'kern', 'onum';
 }
 
-// Headline Styles
-//////////////////
+.smallcaps {
+  font-variant-caps: all-small-caps;
+  -moz-font-feature-settings: 'liga', 'clig', 'kern', 'c2sc', 'smcp';
+  -webkit-font-feature-settings: 'liga', 'clig', 'kern', 'c2sc', 'smcp';
+  font-feature-settings: 'liga', 'clig', 'kern', 'c2sc', 'smcp';
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: $meta;
   font-weight: 700;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
@@ -36,6 +40,10 @@ h1 {
 
 h2 {
   font-size: 1.125em;
+}
+
+p {
+  margin: 0 0 $base-spacing;
 }
 
 // Link Styles

@@ -3,15 +3,53 @@
 @import 'typography';
 
 .meta {
-  font-family: $meta-serif;
-  font-size: 17px;
+  font-size: 1.0625em;
   font-weight: 500;
   line-height: 1.5;
   margin: 5% auto 10% 10%;
   max-width: 36em;
 
-  p {
-    margin: 0 0 $base-spacing;
+  h1,
+  h2 {
+    font-family: $meta;
   }
 
+  p {
+    font-family: $meta-serif;
+  }
+}
+
+.skolar {
+  @extend %oldstyle;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 5% auto 10% 10%;
+  max-width: 36em;
+
+  h1,
+  h2 {
+    font-family: $skolar-sans;
+  }
+
+  p {
+    font-family: $skolar;
+  }
+}
+
+.cordale {
+  font-size: 1.0625em;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 5% auto 10% 10%;
+  max-width: 36em;
+
+  h1,
+  h2 {
+    font-family: $effra;
+  }
+
+  p {
+    font-family: $cordale;
+  }
 }
