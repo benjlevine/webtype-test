@@ -1,8 +1,6 @@
 // Typography
-$whitney: 'Whitney A', 'Whitney B', $font-stack-helvetica;
-$whitney-smallcap: 'Whitney SC A', 'Whitney SC B', $font-stack-helvetica;
-$plantin: 'Plantin W01', $font-stack-georgia;
-$heading-font-family: $whitney;
+$meta-serif: 'ff-meta-serif-web-pro';
+$meta: 'ff-meta-web-pro';
 
 // Font Sizes
 $base-font-size: 1em;
@@ -39,29 +37,9 @@ $clr-bl2: rgb(4, 11, 184);
 $base-font-color: $clr-black;
 $action-color: $clr-mag2;
 
-// Gradients
-$gradient-reg: linear-gradient(to right, $clr-prpl, $clr-bl2);
-$gradient-strong: linear-gradient(to right, $clr-mag1, $clr-bl2);
-$gradient-mirror: linear-gradient(to right, $clr-bl2, $clr-mag1, $clr-bl2);
-$gradient-fade: linear-gradient(to bottom, transparent, $clr-prpl);
-
-// Shadows
-$base-shadow: .5em .5em .5em rgba(0, 0, 0, .2);
-$base-shadow-hover: .125em .125em .25em rgba(86, 0, 171, .2);
-
-// Border
-$base-border-color: $clr-mag2;
-$base-border: 1px solid $base-border-color;
-$underline-white: 4px solid $clr-white;
-$block-underline-off: .3em solid transparent;
-
 // Background Colors
-$base-background-color: $clr-bg;
-$secondary-background-color: $clr-white;
-
-// Forms
-$form-box-shadow: .25rem .25rem .25rem rgba(0, 0, 0, .2) inset;
-$form-box-shadow-focus: $form-box-shadow;
+$base-background-color: $clr-white;
+$secondary-background-color: $clr-bg;
 
 // Animations
 $base-duration: 200ms;

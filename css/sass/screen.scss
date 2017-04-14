@@ -1,3 +1,17 @@
 @import 'normalize';
 @import 'variables';
 @import 'typography';
+
+.meta {
+  font-family: $meta-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 5% auto 10% 10%;
+  max-width: 36em;
+
+  p {
+    margin: 0 0 $base-spacing;
+  }
+
+}

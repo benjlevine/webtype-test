@@ -2,88 +2,40 @@
 //////////////////
 body {
   color: $base-font-color;
-  font-family: $whitney;
-  font-size: $base-font-size;
-  font-weight: 500;
-  line-height: $base-line-height;
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: 'liga', 'clig', 'kern';
+  -webkit-font-feature-settings: 'liga', 'clig', 'kern';
+  font-feature-settings: 'liga', 'clig', 'kern';
+  background-color: $base-background-color;
 }
 
+%small-caps {
+  font-family: $meta-serif;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+}
+
+// Headline Styles
+//////////////////
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
+  font-family: $meta;
   font-weight: 700;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
 
-h1,
-.h1 {
+h1 {
   font-size: 2.25em;
-
-  @include media($desktop-up) {
-    font-size: 3em;
-  }
 }
 
-%h2-h4 {
-  text-align: center;
-}
-
-h2,
-.h2 {
-  @extend %h2-h4;
+h2 {
   font-size: 1.125em;
-}
-
-h3,
-.h3 {
-  font-size: 2em;
-
-}
-
-h4,
-.h4 {
-  @extend %h2-h4;
-  font-size: 1.5em;
-}
-
-h5,
-.h5 {
-  font-size: 1em;
-  line-height: 1.25;
-}
-
-h6,
-.h6 {
-  font-size: .9375em;
-}
-
-p,
-.p {
-  margin: 0 0 $small-spacing;
-}
-
-%dek {
-  color: $clr-gr150;
-  font-weight: 700;
-}
-
-%small-caps {
-  font-family: $whitney-smallcap;
-  font-weight: 700;
-  letter-spacing: .1em;
-  text-transform: lowercase;
-}
-
-%tout-p {
-  font-size: 1.75em;
-  font-weight: 500 !important;
-  line-height: 1;
-  margin: $small-spacing $base-spacing $base-spacing;
 }
 
 // Link Styles
@@ -91,52 +43,4 @@ p,
 a {
   color: inherit;
   text-decoration: none;
-}
-
-%gradient-fill {
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: $gradient-strong;
-  color: transparent;
-}
-
-%fancy-link {
-  @extend %gradient-fill;
-  border-bottom: .25rem solid $clr-white;
-  font-weight: 700;
-  transition: $base-transition;
-
-  &:hover {
-    background-image: linear-gradient(to left, $clr-mag1, $clr-bl2);
-  }
-}
-
-// Horizontal Rules
-//////////////////
-hr {
-  border-bottom: $base-border;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: $base-spacing 0 $small-spacing;
-}
-
-.wht-prpl-wht {
-  background-image: $gradient-mirror;
-  border-bottom: 4px solid $clr-white;
-  border-top: 4px solid $clr-white;
-  height: 1px;
-  margin-bottom: $small-spacing / 2;
-}
-
-.bg-prpl-bg {
-  background-image: $gradient-mirror;
-  border-bottom: 4px solid $clr-bg;
-  border-top: 4px solid $clr-bg;
-  height: 1px;
-}
-
-.wht {
-  border-bottom: 8px solid $clr-white;
-  clear: both;
 }
