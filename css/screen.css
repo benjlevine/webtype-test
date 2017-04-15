@@ -463,10 +463,10 @@ body {
 }
 
 .smallcaps {
-  font-variant-caps: all-small-caps;
   -moz-font-feature-settings: 'liga', 'clig', 'kern', 'c2sc', 'smcp';
   -webkit-font-feature-settings: 'liga', 'clig', 'kern', 'c2sc', 'smcp';
   font-feature-settings: 'liga', 'clig', 'kern', 'c2sc', 'smcp';
+  letter-spacing: .025em;
 }
 
 h1,
@@ -502,14 +502,16 @@ a {
   font-weight: 500;
   line-height: 1.5;
   margin: 5% auto 10% 10%;
-  max-width: 36em;
+  max-width: 32em;
 }
 .meta h1,
 .meta h2 {
   font-family: "ff-meta-web-pro";
+  letter-spacing: -.01em;
 }
 .meta p {
   font-family: "ff-meta-serif-web-pro";
+  letter-spacing: .01em;
 }
 
 .skolar {
@@ -517,11 +519,12 @@ a {
   font-weight: 400;
   line-height: 1.5;
   margin: 5% auto 10% 10%;
-  max-width: 36em;
+  max-width: 32em;
 }
 .skolar h1,
 .skolar h2 {
   font-family: "skolar-sans-latin";
+  font-weight: 800;
 }
 .skolar p {
   font-family: "skolar-latin";
@@ -532,7 +535,7 @@ a {
   font-weight: 400;
   line-height: 1.5;
   margin: 5% auto 10% 10%;
-  max-width: 36em;
+  max-width: 32em;
 }
 .cordale h1,
 .cordale h2 {
@@ -540,6 +543,105 @@ a {
 }
 .cordale p {
   font-family: "cordale";
+}
+
+.miller {
+  font-size: 1.0625em;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 5% auto 10% 10%;
+  max-width: 32em;
+}
+.miller h1,
+.miller h2 {
+  font-family: "effra";
+}
+.miller p {
+  font-family: "MillerText-Roman";
+  letter-spacing: .005em;
+}
+
+.newcal {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 1.125em;
+  line-height: 1.4;
+  margin: 5% auto 10% 10%;
+  max-width: 32em;
+}
+.newcal h1,
+.newcal h2 {
+  font-family: "aktiv-grotesk";
+  font-weight: 900;
+  letter-spacing: -.01em;
+}
+.newcal h1 {
+  font-size: 2em;
+}
+.newcal h2 {
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.newcal p {
+  font-family: "NewCaledoniaLTStd";
+  letter-spacing: .015em;
+}
+
+.prensa {
+  font-size: 1.0625em;
+  line-height: 1.5;
+  margin: 5% auto 10% 10%;
+  max-width: 32em;
+}
+.prensa h1,
+.prensa h2 {
+  font-family: "franklin-gothic-urw";
+}
+.prensa p {
+  color: #3c3c3c;
+  font-family: "Prensa-Regular";
+}
+
+.electra {
+  font-size: 1.125em;
+  line-height: 1.4;
+  margin: 5% auto 10% 10%;
+  max-width: 32em;
+}
+.electra h1,
+.electra h2 {
+  font-family: "franklin-gothic-urw";
+  font-weight: 900;
+}
+.electra h1 {
+  font-size: 2em;
+}
+.electra h2 {
+  font-weight: 400;
+  margin-bottom: 1em;
+  margin-top: -0.5em;
+}
+.electra p {
+  font-family: "ParkinsonElectraStd-Rg";
+  letter-spacing: .025em;
+}
+
+.publico {
+  font-size: 1.0625em;
+  line-height: 1.5;
+  margin: 5% auto 10% 10%;
+  max-width: 32em;
+}
+.publico h1,
+.publico h2 {
+  font-family: "franklin-gothic-urw";
+}
+.publico p {
+  color: #3c3c3c;
+  font-family: "PublicoText-Roman";
+  letter-spacing: .01em;
 }
 
 /*# sourceMappingURL=screen.css.map */

@@ -6,6 +6,12 @@ $skolar-sans: 'skolar-sans-latin';
 $cordale: 'cordale';
 $effra: 'effra';
 $aktiv: 'aktiv-grotesk';
+$miller: 'MillerText-Roman';
+$newcal: 'NewCaledoniaLTStd';
+$prensa: 'Prensa-Regular';
+$electra: 'ParkinsonElectraStd-Rg';
+$franklin: 'franklin-gothic-urw';
+$publico: 'PublicoText-Roman';
 
 // Font Sizes
 $base-font-size: 1em;
@@ -26,6 +32,7 @@ $clr-bg: rgb(247, 245, 240);
 
 $clr-black: rgb(30, 30, 30);
 $clr-white: rgb(255, 255, 255);
+$clr-gr60: rgb(60, 60, 60);
 $clr-gr90: rgb(90, 90, 90);
 $clr-gr120: rgb(120, 120, 120);
 $clr-gr150: rgb(150, 150, 150);
@@ -50,3 +57,16 @@ $secondary-background-color: $clr-bg;
 $base-duration: 200ms;
 $base-timing: ease;
 $base-transition: all $base-timing $base-duration;
+
+// Mixin
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  } @else {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}

@@ -17,10 +17,11 @@ body {
 }
 
 .smallcaps {
-  font-variant-caps: all-small-caps;
+  // font-variant-caps: all-small-caps;
   -moz-font-feature-settings: 'liga', 'clig', 'kern', 'c2sc', 'smcp';
   -webkit-font-feature-settings: 'liga', 'clig', 'kern', 'c2sc', 'smcp';
   font-feature-settings: 'liga', 'clig', 'kern', 'c2sc', 'smcp';
+  letter-spacing: .025em;
 }
 
 h1,
