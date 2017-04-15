@@ -660,7 +660,11 @@ div {
 }
 .minion h1,
 .minion h2 {
-  font-family: "franklin-gothic-urw";
+  font-family: "myriad-pro";
+  font-weight: 900;
+}
+.minion h2 {
+  font-weight: 700;
 }
 .minion p {
   font-family: "minion-pro";
