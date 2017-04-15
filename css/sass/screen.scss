@@ -2,11 +2,14 @@
 @import 'variables';
 @import 'typography';
 
+div {
+  margin: 6.25% 6.25% 12.5%;
+}
+
 .meta {
   font-size: 1.0625em;
   font-weight: 500;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 
   h1,
@@ -26,7 +29,6 @@
   font-size: 1.125em;
   font-weight: 400;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 
   h1,
@@ -44,7 +46,6 @@
   font-size: 1.0625em;
   font-weight: 400;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 
   h1,
@@ -61,7 +62,6 @@
   font-size: 1.0625em;
   font-weight: 400;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 
   h1,
@@ -79,7 +79,6 @@
   @include font-smoothing(subpixel);
   font-size: 1.125em;
   line-height: 1.4;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 
   h1,
@@ -108,7 +107,6 @@
 .prensa {
   font-size: 1.0625em;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 
   h1,
@@ -126,7 +124,6 @@
 .electra {
   font-size: 1.125em;
   line-height: 1.4;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 
   h1,
@@ -155,7 +152,6 @@
 .publico {
   font-size: 1.0625em;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 
   h1,
@@ -167,5 +163,39 @@
     color: $clr-gr60;
     font-family: $publico;
     letter-spacing: .01em;
+  }
+}
+
+.sabon {
+  font-size: 1.0625em;
+  line-height: 1.5;
+  max-width: 32em;
+
+  h1,
+  h2 {
+    font-family: $franklin;
+  }
+
+  p {
+    font-family: $sabon;
+    // letter-spacing: .01em;
+  }
+}
+
+.minion {
+  @extend %oldstyle;
+  font-size: 1.1875em;
+  line-height: 1.4;
+  max-width: 30em;
+
+  h1,
+  h2 {
+    font-family: $franklin;
+  }
+
+  p {
+    font-family: $minion;
+    font-weight: 400;
+    // letter-spacing: .01em;
   }
 }

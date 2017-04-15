@@ -455,7 +455,7 @@ body {
   background-color: white;
 }
 
-.skolar {
+.skolar, .minion {
   font-variant-numeric: oldstyle-nums;
   -moz-font-feature-settings: 'liga', 'clig', 'kern', 'onum';
   -webkit-font-feature-settings: 'liga', 'clig', 'kern', 'onum';
@@ -497,11 +497,14 @@ a {
   text-decoration: none;
 }
 
+div {
+  margin: 6.25% 6.25% 12.5%;
+}
+
 .meta {
   font-size: 1.0625em;
   font-weight: 500;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 }
 .meta h1,
@@ -518,7 +521,6 @@ a {
   font-size: 1.125em;
   font-weight: 400;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 }
 .skolar h1,
@@ -534,7 +536,6 @@ a {
   font-size: 1.0625em;
   font-weight: 400;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 }
 .cordale h1,
@@ -549,7 +550,6 @@ a {
   font-size: 1.0625em;
   font-weight: 400;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 }
 .miller h1,
@@ -567,7 +567,6 @@ a {
   text-rendering: optimizeLegibility;
   font-size: 1.125em;
   line-height: 1.4;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 }
 .newcal h1,
@@ -592,7 +591,6 @@ a {
 .prensa {
   font-size: 1.0625em;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 }
 .prensa h1,
@@ -607,7 +605,6 @@ a {
 .electra {
   font-size: 1.125em;
   line-height: 1.4;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 }
 .electra h1,
@@ -631,7 +628,6 @@ a {
 .publico {
   font-size: 1.0625em;
   line-height: 1.5;
-  margin: 5% auto 10% 10%;
   max-width: 32em;
 }
 .publico h1,
@@ -642,6 +638,33 @@ a {
   color: #3c3c3c;
   font-family: "PublicoText-Roman";
   letter-spacing: .01em;
+}
+
+.sabon {
+  font-size: 1.0625em;
+  line-height: 1.5;
+  max-width: 32em;
+}
+.sabon h1,
+.sabon h2 {
+  font-family: "franklin-gothic-urw";
+}
+.sabon p {
+  font-family: "SabonNextLT-Regular";
+}
+
+.minion {
+  font-size: 1.1875em;
+  line-height: 1.4;
+  max-width: 30em;
+}
+.minion h1,
+.minion h2 {
+  font-family: "franklin-gothic-urw";
+}
+.minion p {
+  font-family: "minion-pro";
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=screen.css.map */
